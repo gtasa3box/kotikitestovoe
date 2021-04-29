@@ -41,19 +41,5 @@ $('.js-slick').slick({
 	]
 });
 
-	$(document).ready(function() {
-		$(".popup").fancybox();
-	});
-
-
-
-
-
-
-
-
-
-
-
 
 console.log('Boilerplate is working!');

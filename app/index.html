@@ -5,12 +5,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 <link rel="shortcut icon" href="/static/favicon.png" type="image/png">
 <title>НовРемТех</title>
 </head>
 <body>
+	<!--Header-->
+	<header class="header">
+		<div class="header__logo">
+			<div class="logo img"></div>
+		</div>
+		<nav class="menu menu__header">
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+					<span></span>
+				</label>
+				<ul class="menu__box">
+					<li><a class="menu__item" href="#benefits">Приемущества</a></li>
+					<li><a class="menu__item" href="#price_comparison">Сравнения цен</a></li>
+					<li><a class="menu__item" href="#clients">Клиенты</a></li>
+					<li><a class="menu__item" href="#contacts">Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-	
+	<!--main block-->
+
+	<div class="wrapper">
+		<section class="mainblock block">
+			<div class="mainblock__tagline">
+				<h1 class="title title__mainblock">Ремонт вместо замены</h1>
+				<p class="text">Ремонт вместо замены всем всем всем</p>
+				<a class="mainblock__tagline__button" data-fancybox="modal" data-src="#modal">Связаться!</a>
+			</div>
+		</section>
+	<!--Benefits-->
+		<section class="benefitsblock block">
+			<div id="benefits" class="title__twoblock">
+				<h2 class="title title-white">Очевидные преимущества:</h2>
+			</div>
+			<div class="text text__benefitsblock">
+				<div class="benefitsblock__column">
+					<h3>— Экономия</h3> 
+					<p>Реставрация оборудования явно дешевле замены.</p>
+				</div>
+				<div class="benefitsblock__column">
+					<h3>— Надежность</h3> 
+					<p>Покрытие бельзоны превосходит по стойкости материнский материал.</p>
+				</div>
+				<div class="benefitsblock__column">
+					<h3>— Доступность</h3> 
+					<P>Все работы производятся без необходимости вывоза оборудования.</p>
+				</div>
+				<div class="benefitsblock__column">
+					<h3>— Доступность</h3> 
+					<P>Все работы производятся без необходимости вывоза оборудования.</p>
+				</div>
+				<div class="benefitsblock__column">
+					<h3>— Практичность</h3> 
+					<p>Наша работа устранит проблему на максимально возможный срок.</p>
+				</div>
+			</div>
+		</section>
+		<!--price comparison-->
+		<section id="price_comparison" class="priceblock block">
+			<div class="priceblock__title">
+				<h2 class="title title-black">Сравнение цен</h2>
+			</div>
+			<div class="priceblock__grid">
+				<div class="slider js-slick">
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<h3 class="title elemgrid__title">Насос</h3>
+							<img src="static/nasos.jpg" alt="">
+							<p>Цена замены: <span class="pricered">90000000р</span></p>
+							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
+							<a class="">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--clients-->
+		<section id="clients" class="clientsblock block">
+			<div class="clientsblock__title">
+				<h2 class="title title-white">Довольные клиенты</h2>
+			</div>
+			<div class="clientsblock__grid">
+				<div class="slider js-slick">
+					<div class="slider__item">
+						<div class="elemgrid">
+							<img src="static/luklogo.png" alt="">
+							<p>Лукойл</p>
+							<a href="">Отзыв</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<img src="static/luklogo.png" alt="">
+							<p>Лукойл</p>
+							<a href="">Отзыв</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<img src="static/luklogo.png" alt="">
+							<p>Лукойл</p>
+							<a href="">Отзыв</a>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="elemgrid">
+							<img src="static/luklogo.png" alt="">
+							<p>Лукойл</p>
+							<a href="">Отзыв</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--contacts-->
+		<section id="contacts" class="contactsblock block">
+			<div class="contacts contactsblock__contacts box">
+				<div class="contactsblock__title">
+					<h2 class="title title-black">Контакты</h2>
+				</div>
+				<div class="contactsblock__phone"><a href="tel:+78312465432">+7 (8312) 46-54-32</a></div>
+				<p>603002, г.Н.Новгород ул.Обухова 11, оф.208</p>
+				<div class="contactsblock__button"><a >Свяжись</a></div>
+			</div>
+		</section>
+	<!--footer-->
+		<section class="footer">
+			<div class="footer__logo">
+				<div class="logo-bel img-belzon"></div>
+			</div>
+			<p>Региональный представитель фирмы Belzona Polymerics Ltd.</p>
+		</section>
+	</div>
+	<!--popup-->
+	<form id="modal" class="popup fancybox-content" method="post">
+		<label for="email">Введите email<br></label>
+		<input class="popup__input" id="email" type="email" value=""><br>
+		<label for="number">Введите номер телефона</label>
+		<input class="popup__input" id="number" type="number" value="">
+		<p>Дополнительная информация:</p>
+		<textarea class="popup_textarea"></textarea>
+		<button type="submit" class="popup__button" name="submitbtn" value="">Отправить</button>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

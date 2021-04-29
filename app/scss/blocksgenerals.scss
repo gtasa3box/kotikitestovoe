@@ -1,0 +1,14 @@
+.block {
+	width: 100%;
+}
+.title {
+	font-family: MyriadProRegular;
+	font-size: 20px;
+	text-align: center;
+	&-white {
+		color: #fff;
+	}
+	&-black {
+		color: #000;
+	}
+}
