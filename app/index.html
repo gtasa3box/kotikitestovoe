@@ -36,16 +36,18 @@
 	<!--main block-->
 
 	<div class="wrapper">
-		<section class="mainblock block">
-			<div class="mainblock__tagline">
+		<section class="block block_main">
+			<div class="block_main__tagline">
 				<h1 class="title title__mainblock">Ремонт вместо замены</h1>
 				<p class="text">Ремонт вместо замены всем всем всем</p>
-				<a class="mainblock__tagline__button" data-fancybox="modal" data-src="#modal">Связаться!</a>
+				<a class="block_main__button" data-fancybox data-src="#modal">Связаться!</a>
 			</div>
 		</section>
+
 	<!--Benefits-->
+
 		<section class="benefitsblock block">
-			<div id="benefits" class="title__twoblock">
+			<div id="benefits" class="title__benefits">
 				<h2 class="title title-white">Очевидные преимущества:</h2>
 			</div>
 			<div class="text text__benefitsblock">
@@ -71,7 +73,9 @@
 				</div>
 			</div>
 		</section>
+
 		<!--price comparison-->
+
 		<section id="price_comparison" class="priceblock block">
 			<div class="priceblock__title">
 				<h2 class="title title-black">Сравнение цен</h2>
@@ -84,7 +88,7 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal1" class="">Подробнее</a>
 						</div>
 					</div>
 					<div class="slider__item">
@@ -93,7 +97,7 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal2" class="">Подробнее</a>
 						</div>
 					</div>
 					<div class="slider__item">
@@ -102,7 +106,7 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal3" class="">Подробнее</a>
 						</div>
 					</div>
 					<div class="slider__item">
@@ -111,7 +115,7 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal4" class="">Подробнее</a>
 						</div>
 					</div>
 					<div class="slider__item">
@@ -120,7 +124,7 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal5" class="">Подробнее</a>
 						</div>
 					</div>
 					<div class="slider__item">
@@ -129,13 +133,33 @@
 							<img src="static/nasos.jpg" alt="">
 							<p>Цена замены: <span class="pricered">90000000р</span></p>
 							<p>Цена ремонта: <span class="pricegreen">150р</span></p>
-							<a class="">Подробнее</a>
+							<a data-fancybox data-src="#pricemodal6" class="">Подробнее</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+	<!--Modal-->
+		<div id="pricemodal1">
+		</div>
+
+		<div id="pricemodal2">
+		</div>
+
+		<div id="pricemodal3">
+		</div>
+
+		<div id="pricemodal4">
+		</div>
+
+		<div id="pricemodal5">
+		</div>
+
+		<div id="pricemodal6">
+		</div>
+
 	<!--clients-->
+
 		<section id="clients" class="clientsblock block">
 			<div class="clientsblock__title">
 				<h2 class="title title-white">Довольные клиенты</h2>
@@ -146,34 +170,122 @@
 						<div class="elemgrid">
 							<img src="static/luklogo.png" alt="">
 							<p>Лукойл</p>
-							<a href="">Отзыв</a>
+							<a data-fancybox data-src="#clientsmodal1" href="">Отзыв</a>
 						</div>
 					</div>
 					<div class="slider__item">
 						<div class="elemgrid">
 							<img src="static/luklogo.png" alt="">
 							<p>Лукойл</p>
-							<a href="">Отзыв</a>
+							<a data-fancybox data-src="#clientsmodal2" href="">Отзыв</a>
 						</div>
 					</div>
 					<div class="slider__item">
 						<div class="elemgrid">
 							<img src="static/luklogo.png" alt="">
 							<p>Лукойл</p>
-							<a href="">Отзыв</a>
+							<a data-fancybox data-src="#clientsmodal3" href="">Отзыв</a>
 						</div>
 					</div>
 					<div class="slider__item">
 						<div class="elemgrid">
 							<img src="static/luklogo.png" alt="">
 							<p>Лукойл</p>
-							<a href="">Отзыв</a>
+							<a data-fancybox data-src="#clientsmodal4" href="">Отзыв</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+			<!--Modal-->
+		<div id="clientsmodal1">
+		</div>
+
+		<div id="clientsmodal2">
+		</div>
+
+		<div id="clientsmodal3">
+		</div>
+
+		<div id="clientsmodal4">
+		</div>
+
+
+	<!--production-->
+
+		<section id="production" class="productionblock block">
+			<div class="clientsblock__title">
+				<h2 class="title">Наша продукция</h2>
+			</div>
+			<div class="production__content content">
+				<div class="content__grid">
+					<div class="content__elem">
+						<div class="1element elem">
+							<div class="img__1element img_element"></div>
+							<a>КОМПОЗИТНЫЙ РЕМОНТ/ВОССТАНОВЛЕНИЕ МЕТАЛЛА</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="2element  elem">
+							<div class="img__2element img_element"></div>
+							<a>ЗАЩИТА ОТ ЭРОЗИИ И КОРРОЗИИ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="3element  elem">
+							<div class="img__3element img_element"></div>
+							<a>ЗАЩИТА И РЕМОНТ РЕЗИНОВЫХ ПОВЕРХНОСТЕЙ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="4element  elem">
+							<div class="img__4element img_element"></div>
+							<a>СТОЙКИЕ К АБРАЗИВНОМУ ИЗНОСУ ВНУТРЕННИЕ ПОКРЫТИЯ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="5element  elem">
+							<div class="img__5element img_element"></div>
+							<a>ВОДОНЕПРОНИЦАЕМЫЕ/АТМОСФЕРОСТОЙКИЕ СИСТЕМЫ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="6element  elem">
+							<div class="img__6element img_element"></div>
+							<a>СОЗДАНИЕ ПРОТИВОСКОЛЬЗЯЩИХ ПОВЕРХНОСТЕЙ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="7element  elem">
+							<div class="img__7element img_element"></div>
+							<a>ВЫСОКОТЕМПЕРАТУРНЫЕ ПОКРЫТИЯ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="8element  elem">
+							<div class="img__8element img_element"></div>
+							<a>МАТЕРИАЛЫ ДЛЯ ЛИТЬЯ/ИНЖЕКТИРОВАНИЯ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="9element  elem">
+							<div class="img__9element img_element"></div>
+							<a>ЗАЩИТА БЕТОННЫХ ПОВЕРХНОСТЕЙ</a>
+						</div>
+					</div>
+					<div class="content__elem">
+						<div class="10element  elem">
+							<div class="img__10element img_element"></div>
+							<a>РЕМОНТ БЕТОННЫХ ПОВЕРХНОСТЕЙ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	<!--contacts-->
+
 		<section id="contacts" class="contactsblock block">
 			<div class="contacts contactsblock__contacts box">
 				<div class="contactsblock__title">
@@ -181,10 +293,12 @@
 				</div>
 				<div class="contactsblock__phone"><a href="tel:+78312465432">+7 (8312) 46-54-32</a></div>
 				<p>603002, г.Н.Новгород ул.Обухова 11, оф.208</p>
-				<div class="contactsblock__button"><a >Свяжись</a></div>
+				<div class="contactsblock__button" data-fancybox data-src="#modal"><a >Свяжись</a></div>
 			</div>
 		</section>
+
 	<!--footer-->
+
 		<section class="footer">
 			<div class="footer__logo">
 				<div class="logo-bel img-belzon"></div>
@@ -192,6 +306,7 @@
 			<p>Региональный представитель фирмы Belzona Polymerics Ltd.</p>
 		</section>
 	</div>
+
 	<!--popup-->
 	<form id="modal" class="popup fancybox-content" method="post">
 		<label for="email">Введите email<br></label>
