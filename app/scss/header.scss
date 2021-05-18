@@ -1,0 +1,82 @@
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(static/background_header.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		background: rgba(31, 32, 33, 0.79);
+		width: 100%;
+		height: 100%;
+	}
+	&__wrapper {
+		width: 100%;
+		max-width: 1280px;
+		padding: 40px 0 66px;
+		position: relative;
+		z-index: 2;
+	}
+	&__main {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__sorting {
+		margin-top: 50px;
+	}
+	&__nav {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		width: 505px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 12px;
+		.nav__elem {
+			&:hover {
+				text-decoration: underline;
+			}
+			&:active {
+				opacity: 0.3;
+			}
+		}
+	}
+	&__number {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 12px;
+		.number__phone {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px; 
+			line-height: 29px;
+			margin-bottom: 3px;
+			&:hover {
+				opacity: 0.7;
+			}
+			&:active {
+				opacity: 0.3;
+			}
+		}
+	}
+	&__sorting {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+	}
+}
+.logo {
+	display: block;
+	background-image: url(static/logo.png);
+	background-size: cover;
+	width: 78px;
+	height: 50.3px;
+}
