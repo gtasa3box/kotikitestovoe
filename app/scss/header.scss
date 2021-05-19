@@ -8,6 +8,9 @@
 	background-size: 100% 100%;
 	background-position: center;
 	position: relative;
+	@media screen and (max-width: 1300px) {
+		padding: 0 30px;
+	}
 	&:before {
 		content: '';
 		position: absolute;
@@ -21,6 +24,17 @@
 		padding: 40px 0 66px;
 		position: relative;
 		z-index: 2;
+		@media screen and (max-width: 1025px) {
+				padding-bottom: 30px;
+			}
+		@media screen and (max-width: 769px) {
+			position: static;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		@media screen and (max-width: 376px) {
+			padding-bottom: 0;
+		}
 	}
 	&__main {
 		display: flex;
@@ -28,6 +42,54 @@
 	}
 	&__sorting {
 		margin-top: 50px;
+		@media screen and (max-width: 769px) {
+			margin-top: 20px;
+		}
+		@media screen and (max-width: 376px){
+			margin-top: 0;
+		}
+	}
+	&__burger {
+		display: block;
+		width: 29px;
+		height: 29px;
+		cursor: pointer;
+		position: absolute;
+		top: 110px;
+		right: 30px;
+		@media screen and (max-width: 376px) {
+			top: 80px;
+		}
+	}
+	.burger {
+		width: 25px;
+		height: 3px;
+		background-color: white;
+		position: absolute;
+		top: 7px;
+		left: 2px;
+		transition: 0.5s ease; 
+		@media screen and (min-width: 769px) {
+			display: none;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 3px;
+			background-color: white;
+			top: 6px;
+			transition: 0.5s ease;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 3px;
+			background-color: white;
+			top: 12px;
+			transition: 0.5s ease;
+		}
 	}
 	&__nav {
 		font-style: normal;
@@ -38,9 +100,24 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 12px;
+		@media screen and (max-width: 769px) {
+			position: absolute;
+			flex-direction: column;
+			bottom: -88px;
+			left: 0;
+			background-color: #1f2021;
+			align-items: center;
+			width: 100%;
+			display: none;
+		}
 		.nav__elem {
 			&:hover {
 				text-decoration: underline;
+				@media screen and (max-width: 769px) {
+					background-color: #6ebbd3;
+					width: 100%;
+					text-align: center;
+				}
 			}
 			&:active {
 				opacity: 0.3;
@@ -64,6 +141,15 @@
 			&:active {
 				opacity: 0.3;
 			}
+			@media screen and (max-width: 376px) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		.number__text {
+			@media screen and (max-width: 376px) {
+				font-size: 12px;
+			}
 		}
 	}
 	&__sorting {
@@ -71,6 +157,9 @@
 		font-weight: 700;
 		font-size: 38px;
 		line-height: 46px;
+		@media screen and (max-width: 376px) {
+			font-size: 20px;
+		}
 	}
 }
 .logo {
@@ -79,4 +168,29 @@
 	background-size: cover;
 	width: 78px;
 	height: 50.3px;
+}
+
+//mobile nav
+
+.nav.active {
+	display: flex;
+}
+.burger.active {
+		top: 12px;
+		-moz-transform: rotate(-135deg); 
+		-ms-transform: rotate(-135deg); 
+		-webkit-transform: rotate(-135deg); 
+		-o-transform: rotate(-135deg); 
+		transform: rotate(-135deg);
+		&:before {
+			opacity: 0;
+		}
+		&:after {
+			top: 0px;
+			-moz-transform: rotate(270deg); 
+			-ms-transform: rotate(270deg); 
+			-webkit-transform: rotate(270deg); 
+			-o-transform: rotate(270deg); 
+			transform: rotate(270deg);
+		}
 }

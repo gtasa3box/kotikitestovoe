@@ -3,13 +3,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media screen and (max-width: 376px) {
+			justify-content: center;
+		}
 		.card {
 			width: 30%;
 			margin-bottom: 30px;
+			@media screen and (max-width: 769px) {
+				width: 45%;
+			}
+			@media screen and (max-width: 376px) {
+				width: 90%;
+			}
+			@media screen and (max-width: 321px) {
+				width: 100%;
+			}
 			&__wrapper {
 				padding: 29px;
 				background-color: #F3F3F3;
 				margin-top: -5px;
+				@media screen and (max-width: 1025px) {
+					padding: 10px;
+				}
 			}
 			&__img {
 				width: 100%;
@@ -24,7 +39,14 @@
 					top: 36.7px;
 					opacity: 0.5;
 					cursor: pointer;
+					@media screen and (max-width: 1025px) {
+						top: 23px;
+						right: 25px;
+					}
 					&:hover {
+						opacity: 1;
+					}
+					&:active {
 						opacity: 1;
 					}
 				}
@@ -41,6 +63,10 @@
 						border-radius: 10px;
 						font-size: 16px;
 						line-height: 20px;
+						@media screen and (max-width: 1025px) {
+							top: 20px;
+							left: 22px;
+						}
 					}
 				}
 			}
@@ -50,6 +76,9 @@
 				font-size: 24px;
 				line-height: 29px;
 				margin-bottom: 20px;
+				@media screen and (max-width: 376px) {
+
+				}
 			}
 			&__characteristics {
 				font-style: normal;
@@ -58,9 +87,15 @@
 				line-height: 15px;
 				display: flex;
 				position: relative;
+				@media screen and (max-width: 1025px) {
+					justify-content: space-between;
+				}
 			}
 			.characteristics {
 				padding-left: 22px;
+				@media screen and (max-width: 1025px) {
+					padding-left: 12px;
+				}
 				.bold_style {
 					font-weight: 700;
 					font-size: 16px;
@@ -91,6 +126,9 @@
 				font-size: 24px;
 				line-height: 29px;
 				margin-top: 20px;
+				@media screen and (max-width: 1025px) {
+					text-align: center;
+				}
 			}
 			&__button {
 				color: white;
@@ -138,6 +176,9 @@
 			&:active {
 				background-color: #393c3e;
 			}
+			@media screen and (max-width: 321px) {
+				padding: 25px 70px;
+			}
 		}
 	}
 	&__buttontop {
@@ -153,6 +194,9 @@
 		bottom: 50px;
 		&:hover {
 			opacity: 0.7;
+		}
+		@media screen and (max-width: 376px) {
+			bottom: 10px;
 		}
 	}
 }

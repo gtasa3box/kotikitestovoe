@@ -6,6 +6,12 @@
 		width: 100%;
 		max-width: 1280px;
 		position: relative;
+		@media screen and (max-width: 1300px) {
+			padding: 0 30px;
+		}
+		@media screen and (max-width: 321px) {
+			padding: 0 10px;
+		}
 	}
 	//Sorting//
 	.sorting {
@@ -19,16 +25,27 @@
 			font-style: normal;
 			font-weight: 700;
 			margin-right: 50px;
+			@media screen and (max-width: 376px) {
+				width: 100%;
+				margin-bottom: 5px;
+				margin-right: 0;
+			}
 		}
 		&__price {
 			&:active {
 				opacity: 0.7;
+			}
+			@media screen and (max-width: 376px) {
+				width: 50%;
 			}
 		}
 		&__age {
 			margin-left: 50px;
 			&:active {
 				opacity: 0.7;
+			}
+			@media screen and (max-width: 376px) {
+				width: 50%;
 			}
 		}
 		svg {
